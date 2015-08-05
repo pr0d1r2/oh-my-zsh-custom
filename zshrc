@@ -45,7 +45,17 @@ ZSH_CUSTOM=~/.oh-my-zsh-custom
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(bgnotify git heroku web-search youtube-dl xcode)
+plugins=(
+  bgnotify
+  bundler
+  git
+  heroku
+  ping
+  radiozora
+  web-search
+  xcode
+  youtube-dl
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -84,7 +94,6 @@ setopt interactivecomments
 # Separate up arrow lookback for local and global ZSH history
 unsetopt inc_append_history
 
-source "$HOME/.secret_shell_aliases"
-source "$HOME/.core_shell_aliases"
+source "$HOME/.oh-my-zsh-work/work.zsh"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
