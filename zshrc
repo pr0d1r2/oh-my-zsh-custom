@@ -89,6 +89,8 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export BUNDLER_EDITOR="/usr/local/bin/mvim"
+
 setopt interactivecomments
 
 # Separate up arrow lookback for local and global ZSH history
