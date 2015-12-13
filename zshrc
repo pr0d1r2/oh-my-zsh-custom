@@ -96,8 +96,6 @@ setopt interactivecomments
 # Separate up arrow lookback for local and global ZSH history
 unsetopt inc_append_history
 
-source "$HOME/.oh-my-zsh-work/work.zsh"
-
 export PATH="$HOME/.rbenv/bin:$PATH"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
