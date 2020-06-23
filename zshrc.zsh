@@ -46,15 +46,104 @@ ZSH_CUSTOM=~/.oh-my-zsh-custom
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  alias-finder
+  ansible
+  aws
   bgnotify
+  brew
   bundler
-  git
+  capistrano
+  catimg
+  colored-man-pages
+  colorize
+  command-not-found
+  common-aliases
+  copybuffer
+  copydir
+  copyfile
+  cp
+  dash
+  dircycle
+  docker-compose
+  docker-machine
+  docker
+  dotenv
+  emoji-clock
+  emoji
+  emotty
+  encode64
+  extract
+  fancy-ctrl-z
+  fastfile
+  fd
+  frontend-search
+  fzf
+  gas
+  gcloud
+  gem
+  gitfast
+  github
+  gitignore
+  globalias
+  gnu-utils
   heroku
-  ping
-  radiozora
+  history-substring-search
+  history
+  httpie
+  iterm2
+  jira
+  jsontools
+  kitchen
+  knife_ssh
+  knife
+  last-working-dir
+  nmap
+  osx
+  per-directory-history plugin
+  perl
+  perms
+  pip
+  pipenv
+  postgres
+  pow
+  powder
+  powify
+  profiles
+  rails
+  rake-fast
+  rake
+  rbenv
+  redis-cli
+  ripgrep
+  rsync
+  ruby
+  safe-paste
+  scd
+  screen
+  shrink-path
+  singlechar
+  spring
+  ssh-agent
+  sudo
+  systemadmin
+  terraform
+  thor
+  tig
+  timer
+  tmux-cssh
+  tmux
+  tmuxinator
+  torrent
+  urltools
+  vagrant-prompt
+  vagrant
+  wd
   web-search
   xcode
+  yarn
   youtube-dl
+  zsh-navigation-tools
+  zsh_reload
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -101,3 +190,5 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 source $HOME/.compiled_shell_aliases.sh
+
+zstyle :omz:plugins:ssh-agent agent-forwarding on
