@@ -55,6 +55,7 @@ plugins=(
   web-search
   xcode
   youtube-dl
+  zsh-nvm
 )
 
 source $ZSH/oh-my-zsh.sh
