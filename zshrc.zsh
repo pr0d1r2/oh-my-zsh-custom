@@ -188,6 +188,7 @@ unsetopt inc_append_history
 export PATH="$HOME/.rbenv/bin:$PATH"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if which direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
 
 source $HOME/.compiled_shell_aliases.sh
 
