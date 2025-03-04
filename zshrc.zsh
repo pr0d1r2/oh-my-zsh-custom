@@ -204,3 +204,9 @@ export NVM_DIR="$HOME/.nvm"
 source $HOME/.compiled_shell_aliases.sh
 
 zstyle :omz:plugins:ssh-agent agent-forwarding on
+
+# Nix
+if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+fi
+# End Nix
