@@ -207,6 +207,9 @@ zstyle :omz:plugins:ssh-agent agent-forwarding on
 
 # Nix
 if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+  if [ -d "/nix/var/nix/profiles/default/bin" ]; then
+    export PATH="/nix/var/nix/profiles/default/bin:$PATH"
+  fi
   if [ -n "$(ls -d /opt/homebrew/Cellar/grep/*/libexec/gnubin)" ]; then
     export PATH="$(ls -d /opt/homebrew/Cellar/grep/*/libexec/gnubin | sort | tail -n 1):$PATH"
   fi
